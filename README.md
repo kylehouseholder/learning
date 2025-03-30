@@ -38,4 +38,4 @@ This repository contains my learning projects for Rust and Python.
 ## Notes
 - Always pull before starting work to get the latest changes
 - Commit frequently with descriptive messages
-- Push changes when you're done working 
+- Push changes when you're done working # learning
