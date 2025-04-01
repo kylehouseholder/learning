@@ -45,3 +45,4 @@ def calc_DA(altm, baro, temp):
 # !F: Create a working exit/return to menu function
 def menu():
     # TODO: this should offer an exit too
+    return
