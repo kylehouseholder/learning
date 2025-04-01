@@ -30,16 +30,15 @@ altp = altm + altoffset
 tempISA = 15 + (altm/1000 * -2)
 tempoffset = temp - tempISA
 
-#  !F: sanity check
+# !D: sanity checks
 print("Pressure altitude: ")
 print(altp)
 print("ISA Temp: ")
 print(tempISA)
 
-# !F: Not a working exit, needs return to menu and exit
-exit = getval("Exit? Y/N")
-
 # Calculate density altitude
+
+
 
 # Calculate takeoff and landing distances, both calm and with at least two wind depths (user set)
 
@@ -50,5 +49,5 @@ exit = getval("Exit? Y/N")
 # Calculate VNAV-style descent profile
 
 
-
-
+# !F: Not a working exit, needs return to menu and exit
+exit = getval("Exit? Y/N")
