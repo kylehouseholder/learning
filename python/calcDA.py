@@ -23,10 +23,12 @@ if temp < -40 or temp > 60:
     print("Temperature exceeds range (-40°C to 60°C), try again.")
     temp = getval("Enter temperature (°C): ")
 
+
+# !F: calculations - replace/move into functions?
 altoffset = (29.92 - baro) * 1000
 altp = altm + altoffset
 
-# !F: Rudimentary ISA calculation - replace
+# dumb
 tempISA = 15 + (altm/1000 * -2)
 tempoffset = temp - tempISA
 
@@ -37,17 +39,9 @@ print("ISA Temp: ")
 print(tempISA)
 
 # Calculate density altitude
+def calc_DA(altm, baro, temp):
+    # TODO: complete please
 
-
-
-# Calculate takeoff and landing distances, both calm and with at least two wind depths (user set)
-
-# Calculate climb gradient, climb rate, time to climb to user-driven cruise target
-
-# Calculate estimated HP% and performance in cruise
-
-# Calculate VNAV-style descent profile
-
-
-# !F: Not a working exit, needs return to menu and exit
-exit = getval("Exit? Y/N")
+# !F: Create a working exit/return to menu function
+def menu():
+    # TODO: this should offer an exit too
